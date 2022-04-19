@@ -1,0 +1,17 @@
+{
+	"name": "analysisScript",
+	"properties": {
+		"content": {
+			"query": "USE DataExplorationDB\n\nCREATE EXTERNAL DATA SOURCE ContosoLake\nWITH ( LOCATION = 'https://contosolake.dfs.core.windows.net')",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "DataExplorationDB",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
